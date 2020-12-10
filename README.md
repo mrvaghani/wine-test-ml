@@ -40,7 +40,7 @@ cd /data
 ```
 While inside this directory, run the following docker command to mount `/data` inside the container so that the application is able to access the CSV file.
 
-:information_source: By default, this command will print only top 20 rows regardless of how many rows the input file has.
+:warning: By default, this command will print only top 20 rows regardless of how many rows the input file has.
 
 ```bash
 docker run --rm -v $(pwd):/data vaghanim/pyspark:1.0 <FileName.csv>
