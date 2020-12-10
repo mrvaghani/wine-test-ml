@@ -46,7 +46,7 @@ While inside this directory, run the following docker command to mount `/data` i
 docker run --rm -v $(pwd):/data vaghanim/pyspark:1.0 <FileName.csv>
 ```
 
-By default, the application return top 20 rows from the input file. User can choose to return specific number of rows by using the -o parameter.
+User can choose to return specific number of rows by using the -o parameter.
 The following argument will return 2000 rows.
 
 ```bash
